@@ -14,7 +14,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div class="body">
+    <div className="body">
       <h1 style={{textAlign:'center',color:"#d2691e"}}>AI-Gini</h1>
       <Grid container direction="column" alignItems="center" spacing={2}>
         <Grid item xs={12}>

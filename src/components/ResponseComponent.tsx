@@ -13,7 +13,7 @@ const ResponseBoxContainer = styled('div')(({ theme }) => ({
   marginTop: theme.spacing(2),
   background: 'white',
   padding: `1px`,
-  fontSize: '24px', // Change the font size here
+  fontSize: '24px', 
   color: 'light-black' 
 }));
 
@@ -23,7 +23,7 @@ const ResponseComponent: React.FC<ResponseProps> = ({ response }) => {
   return (
     <div>
       <ResponseBoxContainer >
-      {/* Display the AI response in an appropriate format (text, image, etc.) */}
+      {/* Displaying the ChatGPT response in the response box container */}
       {response}
       </ResponseBoxContainer>
     </div>

@@ -20,6 +20,7 @@ interface InputProps {
 
 const SendButton = styled(Button)(({ theme }) => ({
     marginLeft: theme.spacing(1),
+    marginTop: theme.spacing(2),
   }));
 
 
@@ -34,7 +35,6 @@ const InputComponent: React.FC<InputProps> = ({ onInputResponse }) => {
         // Make a request to the ChatGPT API endpoint
         const response = await axios.post('https://api.openai.com/v1/chat/completions', {
           model: "gpt-3.5-turbo",
-        //   prompt: inputValue,
           max_tokens: 300, // Example parameter, adjust as needed,
           messages : [{
               "role": "user",
@@ -43,7 +43,7 @@ const InputComponent: React.FC<InputProps> = ({ onInputResponse }) => {
         }, {
           headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer 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',
+            'Authorization': 'Bearer XXXXXXXXXXXXXXX',
           }
         });
         // Handle the response
@@ -55,7 +55,7 @@ const InputComponent: React.FC<InputProps> = ({ onInputResponse }) => {
   };
 
   return (
-  <>
+  <form onSubmit={handleClick}>
     <InputField
         label=""
         multiline
@@ -66,8 +66,8 @@ const InputComponent: React.FC<InputProps> = ({ onInputResponse }) => {
         onChange={(e) => setInputValue(e.target.value)}
         placeholder="Enter your message..."
       />
-    <SendButton paddsize="medium" variant="outlined" style={{ background: '#ffffff', padding: '1px'}} onClick={handleClick} endIcon={<SendIcon />}>Send</SendButton>
-    </>
+    <SendButton size="medium" variant="outlined" style={{ background: '#ffffff', padding: '1px'}} type ="submit" endIcon={<SendIcon />}>Send</SendButton>
+    </form>
   );
 };
 
