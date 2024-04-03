@@ -26,3 +26,5 @@ Below are the instructions to start the prodiction server and Start using the ap
 8. Cheers, You have come a long way. Now, just few steps to use the app.
 9. Run the Server: `npm run dev`
 10. Run the app by using this link (http://localhost:3000)
+
+![WebAPP is running. Now, you can resolve all your queries](./AI-GInii.png)
