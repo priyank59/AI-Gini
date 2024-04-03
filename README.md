@@ -22,7 +22,7 @@ Below are the instructions to start the prodiction server and Start using the ap
 
 5. [Link to Generate your openAI api key](https://platform.openai.com/api-keys)
 6. After Generating you need to place your key in ```src/components/InputComponent.tsx```
-7. Here you will place the code `Authorization': 'Bearer XXXXXXXXXXXXXXX`. Replace the xxxxxxx with your API Key
+7. Here you will modify the code `Authorization': 'Bearer XXXXXXXXXXXXXXX`. Replace the xxxxxxx with your API Key
 8. Cheers, You have come a long way. Now, just few steps to use the app.
 9. Run the Server: `npm run dev`
 10. Run the app by using this link (http://localhost:3000)
