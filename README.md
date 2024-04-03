@@ -6,11 +6,19 @@ An AI-powered conversational assistant built by integrating with the OpenAI API.
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
-Provide step-by-step instructions on how to install and set up the project locally. For example:
+Step-By-Step instructions on how to install and set up the project locally. For example:
 
-1. Clone the repository: [AI-Gini](https://github.com/priyank59/AI-Gini/)
+1. Clone the repository: [AI-Gini](https://github.com/priyank59/AI-Gini.git)
+2. Navigate to the project directory: `cd AI-Gini`
+3. Install Node and Npm: [Refer this document for installation](https://gist.github.com/MichaelCurrin/aa1fc56419a355972b96bce23f3bccba)
+4. Intall project Dependencies: 'npm install'
+
+## Usage
+
+Below are the instructions to start the prodiction server and Start using the application. Before that, you need to generate an API-key from OPEN AI.
+
+5. [Link to Generate your openAI api key](https://platform.openai.com/api-keys)
+6. After Generating the key replace 
